@@ -1,0 +1,19 @@
+server:
+  undertow:
+    io-threads: 4
+    worker-threads: 128
+    buffer-size: 1024
+    direct-buffers: true
+  servlet:
+    context-path: /channel
+  port: 8890
+spring:
+  http:
+    encoding:
+      force: true
+      enabled: true
+      charset: UTF-8
+#日志
+logging:
+  config: classpath:log4j2.xml
+
